@@ -15,7 +15,7 @@ tar -czf "cleaned_$1" -- *
 # Move the newley created archive to the main cleaning directory
 mv "cleaned_$1" ..
 # Delete tmp directory
-(
+( # Sub Script to make spellcheck happy!
 cd ..
 rm -r tmp_clean*
 )
